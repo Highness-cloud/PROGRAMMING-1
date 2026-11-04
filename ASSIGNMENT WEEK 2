@@ -1,0 +1,13 @@
+from datetime import datetime
+
+def year_turn_100(age):
+    current_year = datetime.now() . year
+    years_left = 100 - age
+    return current_year + years_left
+
+name = input("What is your name? ")
+age = int(input("How old are you? "))
+
+result = year_turn_100(age)
+
+print(f"Hello {name}! You will turn 100 years old in the year {result}.")
